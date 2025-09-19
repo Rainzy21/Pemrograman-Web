@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Profile Clone - Bootstrap</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { background-color: #000; color: #fff; font-family: sans-serif; }
+        .profile-pic { width: 80px; height: 80px; border: 2px solid #555; border-radius: 50%; overflow: hidden; }
+        @media (min-width: 768px) {
+        .profile-pic { width: 160px; height: 160px; }
+        }
+        .feed img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+        .highlight { width: 64px; height: 64px; border: 1px solid #555; border-radius: 50%; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+<!-- profile header -->
+    <section class="container py-4">
+        <div class="d-flex align-items-start gap-4">
+        <!-- foto profil -->
+        <div class="profile-pic">
+            <img src="/assets/images/pic.jpeg" class="w-100 h-100 object-fit-cover">
+        </div>
+
+        <!-- Info -->
+        <div class="flex-grow-1">
+            <!-- Username + Tombol -->
+            <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-2">
+            <h2 class="h5 m-0">hrvnfsha</h2>
+            <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-dark">Edit profil</button>
+                <button class="btn btn-sm btn-dark">Follow</button>
+            </div>
+            </div>
+
+            <!-- Statistik Desktop -->
+            <div class="d-none d-md-flex gap-4 mt-3 small">
+            <div><b>0</b> kiriman</div>
+            <div><b>100k</b> pengikut</div>
+            <div><b>1</b> diikuti</div>
+            </div>
+
+            <!-- Bio -->
+            <div class="mt-3 small">
+            <p class="m-0">Nothing<br><span class="text-secondary">Sang Naga</span></p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- sorotan -->
+    <section class="container d-flex gap-3 px-3 mt-3 overflow-auto">
+        <div class="d-flex flex-column align-items-center">
+        <div class="highlight"></div>
+        <span class="small mt-1">Sorotan</span>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+        <div class="highlight"></div>
+        <span class="small mt-1">Sorotan</span>
+        </div>
+    </section>
+
+    <!-- statistik follower (responsif) -->
+    <section class="container d-flex justify-content-around text-center border-top border-secondary mt-4 py-2 small d-md-none">
+        <div><b>0</b><br>kiriman</div>
+        <div><b>484</b><br>pengikut</div>
+        <div><b>317</b><br>diikuti</div>
+    </section>
+
+    <!-- navbar -->
+    <section class="container d-flex justify-content-around border-top border-bottom border-secondary py-2 text-secondary fs-4 mt-4">
+        <i data-lucide="grid"></i>
+        <i data-lucide="bookmark"></i>
+        <i data-lucide="user"></i>
+    </section>
+
+    <!-- feed -->
+    <section class="container feed mt-1">
+        <div class="row g-1">
+        <div class="col-4"><img src="/assets/images/1.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/2.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/3.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/4.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/5.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/6.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/7.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/8.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/9.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/10.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/11.jpeg"></div>
+        <div class="col-4"><img src="/assets/images/12.jpeg"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black text-secondary text-center py-4 small mt-5">
+        <p class="m-0">Instagram Clone © 2025</p>
+    </footer>
+
+    <!-- js (menggunakan lucide icon) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
