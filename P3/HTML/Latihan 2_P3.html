@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <link rel="stylesheet" href="/P3/CSS/latihan-2.css">
+</head>
+<body>
+    <h1> CSS Selector </h1>
+
+    <!--Elemen selector-->
+    <p> Ini adalah paragraf biasa menggunakan element selector</p>
+    <!--Class selector-->
+    <p class="highlight"> Ini adalah paragraf dengan class highlight menggunakan class selector</p>
+    <p class="warning"> paragraf ini menggunakan class "warning" </p>
+    <p class="highlight"> Paragraf lain dengan class highlight yang sama.</p>
+    <!--ID selector-->
+    <p id="special">
+        Paragraf ini menggunakan ID selector dengan id "special". ID harus unik di dalam satu halaman. atau hanya boleh 1
+    </p>
+
+    <!--multiple classes-->
+    <p class="highlight border">
+        paragraf dengan dua class: highlight dan border
+    </p>
+
+    <!--Descendant Selector-->
+    <div class="container">
+        <h2> Ini adalah judul dalam div dengan class container </h2>
+        <p> Paragraf ini berada di dalam div dengan class container </p>
+        <div class="inner">
+            <p> Paragraf di dalam inner container. </p>
+        </div>
+    </div>
+
+    <!--Child Selector-->
+    <ul class="menu">
+        <li> Item 1 </li>
+        <li> Item 2
+            <ul>
+                <li> Sub Item 2.1 </li>
+                <li> Sub Item 2.2 </li>
+            </ul>
+        </li>
+        <li> Item 3 </li>
+    </ul>
+
+    <!--Pseudo-class selector-->
+    <div class="links">
+        <h3> Link Examples </h3>
+        <a href="#link1"> Normal Link </a>
+        <a href="#link2"> Link ke 2 </a>
+        <a href="#link3"> Link ke 3 </a>
+    </div>
+
+    <!--atribute selector-->
+    <div class="forms">
+        <h3> Form elements </h3>
+        <input type="text" placeholder="Text input">
+        <input type="password" placeholder="Password input">
+        <input type="email" placeholder="Email input">
+        <button type="button"> Button </button>
+    </div>
+
+    <!--Group selector-->
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>  
+</body>
+</html>

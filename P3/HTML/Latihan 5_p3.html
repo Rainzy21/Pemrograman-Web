@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="/P3/CSS/latihan-5.css">
+</head>
+<body>
+    <h1> Belajar CSS Box Model</h1>
+
+    <!--penjelasan boc model-->
+    <div class="section">
+        <h2>apa itu box model</h2>
+        <p>
+            Setiap elemen HTML dianggap sebagai kotak persegi panjang oleh browser. Box model terdiri dari:
+        </p>
+        <ul>
+            <li><strong>Content:</strong> Isi sebenarnya dari element</li>
+            <li><strong>Padding:</strong> Ruang antara content dan border</li>
+            <li><strong>Border:</strong> Garis tiap element</li>
+            <li>
+                <strong>Margin:</strong> Ruang antara border dan elemen lain
+            </li>
+        </ul>
+    </div>
+
+    <!--visual box model-->
+    <div class="section">
+        <h2> Visual Box Model </h2>
+        <div class="box-model-demo">
+            <div class="margin-demo">
+                <div class="border-demo">
+                    <div class="padding-demo">
+                        <div class="content-demo">
+                            Content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="box-labels">
+            <span class="label margin-label">Margin</span>
+            <span class="label border-label">Border</span>
+            <span class="label padding-label">Padding</span>
+            <span class="label content-label">Content</span>
+        </p>
+    </div>
+
+    <!--margin examples-->
+    <div class="section">
+        <h2>Margin (ruang luar)</h2>
+        <h3>Margin Individual</h3>
+        <div class="margin-top">Margin Top 20px</div>
+        <div class="margin-right">Margin Right 30px</div>
+        <div class="margin-bottom">Margin Bottom 25px</div>
+        <div class="margin-left">Margin Left 40px</div>
+        <h3>Margin Shorthand</h3>
+        <div class="margin-all">Margin semua sisi 15px</div>
+        <div class="margin-vertical-horizontal">
+            Margin vertikal 20px, horizontal 30px
+        </div>
+        <div class="margin-individual-short">
+            Margin: Top 10px, Right 20px, Bottom 15px, Left 25px
+        </div>
+        <h3>Margin Auto</h3>
+        <div class="margin-auto">Margin auto (rata tengah)</div>
+        <h3>Negative margin</h3>
+        <div class="negative-margin-container">
+            <div class="negative-margin">Element dengan negative margin</div>
+        </div>
+    </div>
+
+    <!--padding examples-->
+    <div class="section">
+        <h2>Padding (ruang dalam)</h2>
+        <h3>Padding Individual</h3>
+        <div class="padding-top">Padding Top 15px</div>
+        <div class="padding-right">Padding Right 25px</div>
+        <div class="padding-bottom">Padding Bottom 20px</div>
+        <div class="padding-left">Padding Left 30px</div>
+        <h3>Padding Shorthand</h3>
+        <div class="padding-all">Padding semua sisi 20px</div>
+        <div class="padding-vertical-horizontal">
+            Padding vertikal 15px, horizontal 25px
+        </div>
+        <div class="padding-individual-short">
+            Padding: Top 10px, Right 20px, Bottom 15px, Left 25px
+        </div>
+
+        <h3>Padding vs content size</h3>
+        <div class="padding-content-demo">
+            <div class="with-padding">Dengan padding 20px</div>
+            <div class="without-padding">Tanpa padding</div>
+        </div>
+    </div>
+
+    <!--border examples-->
+    <div class="section">
+        <h2>Border (Garis Tepi)</h2>
+        <h3>Border Style</h3>
+        <div class="border-solid">Border Solid</div>
+        <div class="border-dashed">Border Dashed</div>
+        <div class="border-dotted">Border Dotted</div>
+        <div class="border-double">Border Double</div>
+        <div class="border-groove">Border Groove</div>
+        <div class="border-ridge">Border Ridge</div>
+        <div class="border-inset">Border Inset</div>
+        <div class="border-outset">Border Outset</div>
+
+        <h3>Border Width</h3>
+        <div class="border-thin">Border Thin (1px)</div>
+        <div class="border-medium">Border Medium (3px)</div>
+        <div class="border-thick">Border Thick (5px)</div>
+        <div class="border-custom-width">Border custom 8px</div>
+
+        <h3>Border Color</h3>
+        <div class="border-colored">Border Red</div>
+
+        <h3>Border Individual</h3>
+        <div class="border-individual">Border hanya di sisi tertentu</div>
+
+        <h3>Border Radius</h3>
+        <div class="border-radius-small">Border Radius Kecil (5px)</div>
+        <div class="border-radius-medium">Border Radius Sedang (15px)</div>
+        <div class="border-radius-large">Border Radius Besar (30px)</div>
+        <div class="border-radius-circle">Border Radius 50% (Bulat)</div>
+    </div>
+
+    <!--box sizing-->
+    <div class="section">
+        <h2>Box Sizing</h2>
+        
+        <h3>Content box (default)</h3>
+        <div class="box-sizing-demo">
+            <div class="content-box">
+                Content Box: width tidak termasuk dan border
+                <br /> Total lebar = width + padding + border
+            </div>
+        </div>
+
+        <h3>Border box</h3>
+        <div class="box-sizing-demo">
+            <div class="border-box">
+                Border Box: width sudah termasuk padding dan border
+                <br /> Total lebar = width
+            </div>
+        </div>
+    </div>
+
+    <!--practical exampels-->
+    <div class="card">
+        <div class="card-header">
+            <h4>Judul Card</h4>
+        </div>
+        <div class="card-body">
+            <p>
+                Ini adalah contoh kartu sederhana yang menggunakan box model untuk mengatur margin, padding, dan border.
+            </p>
+            <button class="card-button">Klik Saya</button>
+        </div>
+        <h3>Button Styles</h3>
+        <div class="button-demo">
+            <button class="btn-primary">Primary button</button>
+            <button class="btn-secondary">Secondary button</button>
+            <button class="btn-outline">Outline Button</button>
+            <button class="btn-rounded">Rounded Button</button>
+        </div>
+        <h3>Layout dengan box model</h3>
+        <div class="layout-demo">
+            <div class="sidebar">
+                <h4>Sidebar</h4>
+                <ul>
+                    <li>Menu 1</li>
+                    <li>Menu 2</li>
+                    <li>Menu 3</li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <h4>Main Content</h4>
+                <p>
+                    Ini adalah area konten utama. Box model membantu mengatur tata letak dengan margin, padding, dan border.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--box model inspector-->
+    <div class="section">
+        <h2> TIPS: Gunakan browser inspector</h2>
+        <div class="inspector-demo">
+            <p>
+                klik kanan pada element, inspect element untuk melihat box secara visual di developer tools browser.
+            </p>
+            <div class="inspect-me">element untuk di inspect</div>
+        </div>
+    </div>
+</body>
+</html>
