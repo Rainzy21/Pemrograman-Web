@@ -11,7 +11,7 @@ function runExercises() {
     console.log("Jumlah mahasiswa sekarang:", jumlahMahasiswa)
 
     //soal 3: String
-    let namaLengkap = "Ahmad Sahroni";
+    let namaLengkap = "Sahroni";
     console.log("Halo, nama saya" + namaLengkap);
 
     // soal 4; number
