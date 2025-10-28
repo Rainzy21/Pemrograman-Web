@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Data Mahasiswa</h1>
+        <div class="content-wrapper">
+            <div class="form-section">
+                <div class="form-box">
+                    <form id="mahasiswaForm">
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama">
+
+                        <label for="nim">NIM:</label>
+                        <input type="text" id="nim" name="nim" required>
+
+                        <label for="semester">Semester:</label>
+                        <input type="number" id="semester" name="semester" required min="1" max="8">
+
+                        <label for="program-studi">Program Studi:</label>
+                        <select id="program-studi" name="program-studi" required>
+                            <option value="">Pilih Program Studi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Mesin">Teknik Mesin</option>
+                            <option value="Teknik Sipil">Teknik Sipil</option>
+                            <option value="Teknik Geologi">Teknik Geologi</option>
+                        </select>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="email@example.com">
+
+                        <button type="submit">Kirim Data</button>
+                    </form>
+                </div>
+                <div id="infoMahasiswa" class="info-box">
+                </div>
+            </div>
+
+            <div class="table-section">
+                <h2>Table Mahasiswa</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>Info</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mahasiswaTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
